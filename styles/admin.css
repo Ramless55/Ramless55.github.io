@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Space Grotesk', sans-serif;
+    src: url();
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-image: url("https://wallpapercave.com/wp/wp2722081.jpg");
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    width: 32vw;
+    height: fit-content;
+    padding: 5vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 20vh;
+
+
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+
+    border-radius: 1rem;
+}
+
+.sub-container {
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    padding: 3%;
+
+    border-radius: 1rem;
+}
+
+h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    color: #ac3a92;
+    margin-bottom: 5vh;
+}
+
+input[type = "text"], input[type = "password"] {
+    width: 50%;
+    height: 2.4rem;
+    border-radius: .7rem;
+    border: solid gray;
+}
+
+input[type = "text"]:focus, input[type = "password"]:focus{
+    border: 3px solid black;
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+input:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+input[type = "submit"] {
+    width: 25%;
+    height: 2.4rem;
+    margin-top: 2vh;
+    border-radius: .4rem;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+input[type = "submit"]:hover {
+    cursor: pointer;
+}
+
+#button-img {
+    margin-top: 3vh;
+    width: 14%;
+    height: 6vh;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    margin-left: 44%;
+    overflow: hidden;
+}
+
+#button-img img {
+    transform: translateX(-1%);
+    width: 250%;
+    height: 250%;
+}
+
+#button-img:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+}

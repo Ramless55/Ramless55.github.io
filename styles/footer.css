@@ -1,0 +1,72 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 99.1vw;
+}
+
+.footerContainer .links{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.footerContainer .Info{
+    background-color: rgba(0, 0, 0, 0.3);
+    font-family: Helvetica;
+}
+
+.footerContainer ul{
+    display: inline-block;
+    list-style: none;
+}
+
+.footerContainer h2{
+    color: black;
+}
+
+.footerContainer #story{
+    background-color: rgba(43, 170, 159, 0);
+    width: 20%;
+    height: 15%;
+    font-family: Helvetica;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1%;
+}
+
+.footerContainer #story h2{
+    color: black;
+    font-family: helvetica;
+}
+
+.footerContainer .links a{
+    font-family: Helvetica;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footerContainer .links ul {
+    font-family: Helvetica;
+    text-align: center;
+    padding: 20px 20px;
+    background-color: rgba(43, 170, 159, 0);
+}
+
+.footerContainer .links a:hover{
+    color: var(--colorPage3);
+    transition: all 0.3s;
+}

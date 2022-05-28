@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin-top: 7vh;
+}
+
+.container {
+    background-color: rgb(241, 241, 241);
+    width: 100%;
+    height: 1080px;
+}
+
+.carrousel {
+    width: 100%;
+    max-width: 120rem;
+    background-color: lightskyblue;
+    overflow: hidden;
+}
+
+.carrousel .big {
+    width: 400%;
+    background-color: orange;
+    
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    transition: all .5s ease;
+    transform: translateX(0%);
+
+}
+
+@keyframes automaticMove {
+    from {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50%{
+        transform: translateX(-50%);
+    }
+    75%{
+        transform: translateX(-75%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.carrousel .img {
+   width: calc(100% / 2);
+   height: 60vh;
+   background-color: var(--colorPage1);
+}
+
+.carrousel .points {
+    width: 100%;
+    background-color: var(--colorPage1);
+    padding: .4rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+.carrousel .point {
+    width: 1.8em;
+    height: 1.8em;
+    background-color: var(--colorPage2);
+    margin: .4em;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+.carrousel .point.active {
+    background-color: var(--colorPage3);
+}

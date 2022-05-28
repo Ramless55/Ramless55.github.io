@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-COMIC</title>
-    <link rel="stylesheet" href="./styles/style.css">
+    <title>E-COMICS</title>
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/pageContainer.css">
 </head>
 <body>
-    <header>
+
+
+    <header class="head">
         <nav class="menu">
             <ul>
                 <div>
-                    <a href="#" class="aMod"><div id="box"></div></a>
-                    <li id="link1" class="boxNav"><a href="#" class="aMod">INICIO*</a></li>
+                    <a href="#" class="aMod"><div id="triangle"></div></a>
+                    <li id="link1" class="boxNav"><a href="#" class="aModHome">INICIO*</a></li>
                 </div>
                 <div>
                     <li id="link2" class="boxNav"><a href="#" class="aMod">MANGA</a></li>
@@ -24,5 +28,76 @@
             </ul>
         </nav>
     </header>
+
+
+    <section class="container">
+        <div class="carrousel">
+            <div class="big">
+                <img src="https://wallpapercave.com/wp/wp2722081.jpg" alt="Image 1" class="img">
+                <img src="https://wallpaperaccess.com/full/526625.png" alt="Image 2" class="img">
+                <img src="https://i0.wp.com/hipertextual.com/wp-content/uploads/2016/05/Boku-no-Hero-Academia.jpg?fit=1920%2C1047&ssl=1" alt="Image 3" class="img">
+                <img src="https://images4.alphacoders.com/214/214396.jpg" alt="Image 4" class="img">
+            </div>
+
+            <ul class="points">
+                <li class="point active"></li>
+                <li class="point"></li>
+                <li class="point"></li>
+                <li class="point"></li>
+            </ul>
+        </div>
+    </section>
+
+
+    <footer class="footerContainer">
+        <section class="data">
+
+            <div class="links">
+
+                <div id="story">
+                    <h2>Nuestra Empresa</h2>
+                    <p>Nuestra empresa se dedica a la venta de comics, mangas, figuras y demas cosas del mundo "Friki".
+                        llevamos haciendo este desde hace muchos años y planeamos continuar asi, recientemente nos expandimos a la obtencion
+                        de nuestra propia pagina web.
+                        Nos respaldan años de confianza y espero que vos tambien deposites la tuya en nosotros.
+                    </p>
+                </div>
+
+                <ul id="Redes">
+                    <li><h2>Redes sociales</h2></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+        
+                <ul id="Contacto">
+                    <li><h2>Contactanos</h2></li>
+                    <li><a href="#">Telefono</a></li>
+                    <li><a href="#">Mail</a></li>
+                    <li><a href="#">Whatsapp</a></li>
+                </ul>
+        
+                <ul id="Paginas">
+                    <li><h2>Paginas</h2></li>
+                    <li><a href="#" class="aMod">Manga</a></li>
+                    <li><a href="#" class="aMod">Comic</a></li>
+                    <li><a href="#" class="aMod">Figuras</a></li>
+                </ul>
+
+
+            </div>
+
+        </section>
+
+        <div class="Info">
+            <ul>
+                <li>Copyright © 1999-2022 e-Comics</li>
+                <li>Av. Caseros 3039, Piso 2, CP 1264, Parque Patricios, CABA</li>
+            </ul> 
+        </div>
+
+    </footer>
+
+    <script src="./javascript/index.js"></script>
 </body>
 </html>
