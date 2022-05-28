@@ -51,7 +51,15 @@ h1 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 3rem;
     color: #ac3a92;
-    margin-bottom: 5vh;
+    margin-bottom: 8%;
+}
+
+#error-message {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: rgb(216, 0, 0);
+    margin-bottom: 2%;
+    display: none;
 }
 
 input[type = "text"], input[type = "password"] {
