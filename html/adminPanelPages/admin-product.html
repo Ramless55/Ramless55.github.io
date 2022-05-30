@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../../styles/admin-panel.css">
+    <link rel="stylesheet" href="../../styles/admin-product.css">
+</head>
+<body>
+    <section class="menu">
+        <div id="banners">Banners</div>
+        <div id="new">Nuevos</div>
+        <div id="free">Ofertas</div>
+        <div id="product" class="active">✚ Productos</div>
+        <div id="back">⇦Volver</div>
+    </section>
+
+    <section class="panel-product">
+        <div class="charge-product">
+            <h1>Cargar productos</h1>
+            <form action="">
+                <input tabindex="1" class="focusNext" type="text" id="name" name="Name" placeholder="Ingrese el nombre del producto"/>
+                <input tabindex="2" class="focusNext" type="text" id="price" name="Price" placeholder="Ingrese el precio"/>
+                <textarea tabindex="3" class="focusNext" id="image-link" name="Image" placeholder="Link de imagen"></textarea>
+                <textarea tabindex="4" class="focusNext" id="description" name="Description" placeholder="Descripcion del producto"></textarea>
+                <div>
+                    <label name="types">Tipo de producto:
+                        <input tabindex="5" class="focusNext" id="types" list="type-products" name="Types" /></label>
+                        <datalist id="type-products">
+                          <option value="Manga">
+                          <option value="Comic">
+                          <option value="Figura">
+                          <option value="Otro">
+                        </datalist>
+                </div>
+                <input type="button" id="button" name="Button" value="Cargar Producto"/>
+            </form>
+        </div>
+
+        <div id="difuminated">
+            <div id="popup">
+                <p>El producto fue cargado con exito</p>
+                <button id="close">Cerrar</button>
+            </div>
+        </div>
+    </section>
+    <script src="../../javascript/adminPanel.js"></script>
+</body>
+</html>

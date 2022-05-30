@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap');
+
+@font-face {
+    font-family: 'Space Grotesk', sans-serif;
+    src: url();
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    width: 24vw;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.menu > div {
+    display: flex;
+    width: 100%;
+    padding: 3%;
+    margin-top: 3%;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu > div:not(#coming-soon):hover {
+    transition: all 0.5s;
+    color: white;
+    background-color: #ac3a92;
+    cursor: pointer;
+}
+
+#coming-soon {
+    height: 63%;
+    display: none;
+}
+
+.color-focus {
+    background-color: #ac3a92;
+}
+
+.panel-base{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.panel-base div{
+    width: 53vw;
+    height: fit-content;
+    margin-left: 18%;
+    padding: 5%;
+    border-radius: 1rem;
+
+    background-color: rgb(240, 240, 240);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.panel-base div h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 4rem;
+    color: #ac3a92;
+}
+
+.panel-base div p {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+}
+

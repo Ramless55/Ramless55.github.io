@@ -15,10 +15,25 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         name === admin.nameOne && pass === admin.password || name === admin.nameTwo && pass === admin.password?
-            window.location.href = "./admin-panel.html":
+            window.location.href = "./adminPanelPages/admin-panel.html":
             document.querySelector('#error-message').style.display = 'block';
 
     });
+
+    document.addEventListener('keypress', (event) => {
+        if(event.key !== 'Enter') return;
+
+        if(!element.classList.contains('focusNext')) return;
+
+        let element = event.target;
+        let tabIndex = element.tabIndex + 1;
+        let next = document.querySelector(`[tabindex=${tabIndex}]`);
+
+        if(next){
+            next.focus();
+            event.preventDefault();
+        }
+    })
 
     back.addEventListener('click', () => {
         window.location.href = "../index.html";

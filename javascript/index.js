@@ -31,5 +31,6 @@ const keyLoger =  () => {
     });
 
 }
+
 carrousel();
 keyLoger();
