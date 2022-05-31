@@ -8,18 +8,21 @@ window.addEventListener('DOMContentLoaded', () => {
 
         event.preventDefault();
 
+        //cuentas administrador
         const admin = {
             nameOne: 'Ramless',
             nameTwo: 'Lean',
             password: 'admin'
         }
 
+        //verificacion de cuenta
         name === admin.nameOne && pass === admin.password || name === admin.nameTwo && pass === admin.password?
             window.location.href = "./adminPanelPages/admin-panel.html":
             document.querySelector('#error-message').style.display = 'block';
 
     });
 
+    //funcion para que al apretar enter pase al siguiente input en vez de recargar
     document.addEventListener('keypress', (event) => {
         if(event.key !== 'Enter') return;
 
@@ -35,6 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     })
 
+    //boton que te regresa a la pagina principal
     back.addEventListener('click', () => {
         window.location.href = "../index.html";
     })

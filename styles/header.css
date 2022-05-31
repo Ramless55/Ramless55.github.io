@@ -20,8 +20,7 @@ header {
 
 .menu {
     background-color: var(--colorPage4);
-    width: 99.1vw;
-    height: 7vh;
+    width: 100vw;
     position: fixed;
     overflow: hidden;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
