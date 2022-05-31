@@ -70,3 +70,8 @@
     color: var(--colorPage3);
     transition: all 0.3s;
 }
+
+#developers a{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
