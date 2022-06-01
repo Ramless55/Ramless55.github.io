@@ -1,0 +1,35 @@
+
+.product-card { 
+    margin-right: 3vw;
+    margin-bottom: 3vh;
+    background-color: rgb(240, 240, 240);
+}
+
+.product-card #product-img img{
+    min-width: 18rem;
+    min-height: 20rem;
+    max-width: 18rem;
+    max-height: 20rem;
+    border-bottom: 5px solid var(--colorPage3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-card #product-info {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.product-card #product-info a{
+    color: var(--colorPage3);
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.product-card #product-info #product-price {
+    margin-top: 2%;
+    color: black;
+}
+
+.product-card:hover {
+    cursor: pointer;
+}
