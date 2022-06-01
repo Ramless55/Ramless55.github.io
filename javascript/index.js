@@ -17,6 +17,27 @@ const carrousel = () => {
             point[index].classList.add('active');
         })
     })
+
+    window.addEventListener('DOMContentLoaded', () => {
+
+        let index=0;
+            setInterval(() => {
+                point.forEach((eachPoint, index) => {
+                    point[index].classList.remove('active');
+                })
+                point[index].classList.add('active');
+
+                let operation = index * -25;
+                big.style.transform = `translateX(${operation}%)`;
+                index++;
+                if(operation === -75){
+                    operation = -0;
+                    index = 0;
+                }
+                console.log(operation);
+            }, 5000);
+    });
+
 }
 
 //funcion para que al escribir "admin" en la pantalla principal redirecciona al login de admin

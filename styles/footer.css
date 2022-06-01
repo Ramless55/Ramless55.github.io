@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Space Grotesk', sans-serif;
+    src: url();
+}
+
 .footerContainer {
     display: flex;
     flex-direction: column;
@@ -14,19 +19,21 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 99.1vw;
+    width: 100vw;
 }
 
 .footerContainer .links{
     display: flex;
     justify-content: space-around;
     background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .footerContainer .Info{
-    background-color: rgba(0, 0, 0, 0.3);
-    font-family: Helvetica;
+    background-color: var(--colorPage3);
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0.5%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .footerContainer ul{
@@ -42,7 +49,7 @@
     background-color: rgba(43, 170, 159, 0);
     width: 20%;
     height: 15%;
-    font-family: Helvetica;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 1.3rem;
     text-align: center;
     padding: 1%;
@@ -50,20 +57,20 @@
 
 .footerContainer #story h2{
     color: black;
-    font-family: helvetica;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .footerContainer .links a{
-    font-family: Helvetica;
+    font-family: 'Space Grotesk', sans-serif;
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .footerContainer .links ul {
-    font-family: Helvetica;
+    font-family: 'Space Grotesk', sans-serif;
     text-align: center;
-    padding: 20px 20px;
+    padding: 5% 5%;
     background-color: rgba(43, 170, 159, 0);
 }
 

@@ -23,20 +23,16 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     //funcion para que al apretar enter pase al siguiente input en vez de recargar
-    document.addEventListener('keypress', (event) => {
-        if(event.key !== 'Enter') return;
-
-        if(!element.classList.contains('focusNext')) return;
-
-        let element = event.target;
-        let tabIndex = element.tabIndex + 1;
-        let next = document.querySelector(`[tabindex=${tabIndex}]`);
-
-        if(next){
-            next.focus();
-            event.preventDefault();
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach((input, i) => {
+      input.addEventListener('keydown', (event) => {
+        console.log(event.key);
+        if (i < inputs.length - 1 && event.key === 'Enter') {
+          event.preventDefault();
+          inputs[i + 1].focus();
         }
-    })
+      });
+    });
 
     //boton que te regresa a la pagina principal
     back.addEventListener('click', () => {

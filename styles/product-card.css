@@ -1,6 +1,7 @@
 
 .product-card { 
-    margin-right: 3vw;
+    margin-right: 1.5vw;
+    margin-left: 1.5vw;
     margin-bottom: 3vh;
     background-color: rgb(240, 240, 240);
 }
