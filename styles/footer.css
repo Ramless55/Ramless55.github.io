@@ -83,3 +83,10 @@
     font-weight: 700;
     font-size: 1.5rem;
 }
+
+#contact label {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    padding-right: 10px;
+}

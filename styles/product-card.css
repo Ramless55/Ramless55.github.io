@@ -20,10 +20,15 @@
 }
 
 .product-card #product-info a{
-    color: var(--colorPage3);
     display: flex;
     justify-items: center;
     flex-direction: column;
+}
+
+.product-card #product-info #product-name {
+    color: var(--colorPage3);
+    margin-top: 2%;
+    max-width: 18rem;
 }
 
 .product-card #product-info #product-price {
@@ -33,4 +38,12 @@
 
 .product-card:hover {
     cursor: pointer;
+}
+
+#free-red {
+    text-decoration:line-through;
+    color: red;
+    font-size: .8rem;
+    padding-top: 2%;
+    
 }

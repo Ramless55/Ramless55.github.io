@@ -61,25 +61,41 @@ window.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('products', JSON.stringify(products));
 
             //pone en blanco los inputs nuevamente
-            document.querySelector('[name=Name]').value = ''
-            document.querySelector('[name=Price]').value = ''
-            document.querySelector('[name=Image]').value = ''
-            document.querySelector('[name=Description]').value = ''
-            document.querySelector('[name=Types]').value = ''
+            document.querySelector('[name=name]').value = '';
+            document.querySelector('[name=price]').value = '';
+            document.querySelector('[name=image]').value = '';
+            document.querySelector('[name=description]').value = '';
+            document.querySelector('#types').value = '';
           }
 
           //boton para enviar el formulario
         button.addEventListener('click', (event) => {
             event.preventDefault();
+
+            const inputName = document.querySelector('[name=name]').value;
+            const inputPrice = document.querySelector('[name=price]').value;
+            const inputImage = document.querySelector('[name=image]').value;
+            const inputDesc = document.querySelector('[name=description]').value;
+            const inputTypes = document.querySelector('#types').value;
+
+            if(inputName === '' || inputPrice === '' || inputImage === '' || inputDesc === '' || inputTypes === ''){
+                document.querySelector('#error-message').style.display = 'flex';
+            }else{
             //llama a la funcion para agregar el producto
             addItem();
+            document.querySelector('#error-message').style.display = 'none';
+
             //muestra el popup difuminando el fondo para que no se pueda escribir
             document.querySelector('#difuminated').style.display = 'flex';
+
             //boton de cerrar del popup
             document.querySelector('#close').addEventListener('click', () => {
+
                 //vuelve a ocultar el popup
                 document.querySelector('#difuminated').style.display = 'none';
             })
+
+            }
         });
 
     }

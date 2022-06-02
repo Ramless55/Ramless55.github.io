@@ -23,7 +23,7 @@ console.log(filename)
 
 function filterList(product = [], itemsList, filename){
     itemsList.innerHTML = product.map((product)  => {
-        if(product.types === 'Manga' && filename === 'productos-mangas.html'){
+        if(product.types === 'Manga' && filename === 'products-mangas.html'){
             console.log('entro');
             return `     
             <div class="product-card">
@@ -36,7 +36,7 @@ function filterList(product = [], itemsList, filename){
                 </div>
             </div>
             `
-        }else if(product.types === 'Comic' && filename === 'productos-comic.html'){
+        }else if(product.types === 'Comic' && filename === 'products-comic.html'){
             console.log('entro');
             return `     
             <div class="product-card">
@@ -49,7 +49,7 @@ function filterList(product = [], itemsList, filename){
                 </div>
             </div>
             `
-        }else if(product.types === 'Figura' && filename === 'productos-figura.html'){
+        }else if(product.types === 'Figura' && filename === 'products-figure.html'){
             console.log('entro');
             return `     
             <div class="product-card">
@@ -66,7 +66,7 @@ function filterList(product = [], itemsList, filename){
     }).join('');
     }
 
-if(filename === 'productos.html'){
+if(filename === 'products.html'){
     productList(products, itemList);
 }else{
     filterList(products, itemList, filename)

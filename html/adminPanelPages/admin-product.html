@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
+    <link rel="icon" href="https://t3.ftcdn.net/jpg/02/01/85/18/240_F_201851835_SwaNK7pqG69zteNDjPdIJZmWxTi32irK.jpg">
     <link rel="stylesheet" href="../../styles/admin-panel.css">
     <link rel="stylesheet" href="../../styles/admin-product.css">
 </head>
@@ -20,14 +21,15 @@
     <section class="panel-product">
         <div class="charge-product">
             <h1>Cargar productos</h1>
+            <p id="error-message">*Debes rellenar todos los campos.</p>
             <form action="">
-                <input tabindex="1" class="focusNext" type="text" id="name" name="Name" placeholder="Ingrese el nombre del producto"/>
-                <input tabindex="2" class="focusNext" type="text" id="price" name="Price" placeholder="Ingrese el precio"/>
-                <textarea tabindex="3" class="focusNext" id="image-link" name="Image" placeholder="Link de imagen"></textarea>
-                <textarea tabindex="4" class="focusNext" id="description" name="Description" placeholder="Descripcion del producto"></textarea>
+                <input tabindex="1" class="focusNext" type="text" id="name" name="name" placeholder="Ingrese el nombre del producto"/>
+                <input tabindex="2" class="focusNext" type="number" id="price" name="price" placeholder="Ingrese el precio"/>
+                <textarea tabindex="3" class="focusNext" id="image-link" name="image" placeholder="Link de imagen"></textarea>
+                <textarea tabindex="4" class="focusNext" id="description" name="description" placeholder="Descripcion del producto"></textarea>
                 <div>
                     <label name="types">Tipo de producto:
-                        <input tabindex="5" class="focusNext" id="types" list="type-products" name="Types" /></label>
+                        <input tabindex="5" class="focusNext" id="types" list="type-products" name="types" /></label>
                         <datalist id="type-products">
                           <option value="Manga">
                           <option value="Comic">
