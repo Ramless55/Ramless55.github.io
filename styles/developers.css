@@ -1,0 +1,96 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+:root {
+    --colorPage4: #5dc1b9;
+    --colorPage3: #ac3a92;
+    --colorPage1: #1c1c1c;
+    --colorPage2: #efefef;
+}  
+
+body{
+    background-color: #efefef;
+}
+
+main{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:flex-end;
+   
+}
+img{
+    width:100%;
+    height:100%;
+    border-radius:50% ;
+}
+
+.box{
+    width:350px;
+    height:550px;
+    border:5px groove #c943a9;
+    background-color:#efefef;
+    transform:translateY(10%)
+    flex-wrap=wrap;
+}
+  
+.circle{
+    position:relative;
+    width: 150px;
+    height:150px;
+    left:30%;
+    top:10%;
+    border:5px solid #ac3a92;
+    border-radius:50%;
+}
+
+.datos{
+    width:100%;
+    height:50%;
+    font-size:10px;
+    transform:translateY(100px) translateX(10px); 
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    margin:10px;
+    flex:space-between;
+}
+
+.datos a{
+ position:relative;
+ font-size:25px;
+ bottom:-5%;
+}
+.datos img{
+    position: relative;
+    width: 40px;
+    height:40px;
+    bottom:-10%;
+
+}
+
+.Github img{
+    position: relative;
+    width: 30px;
+    height:30px;
+    bottom:-10%;
+}
+
+.Gmail{
+    transform:translateY(10px)
+}
+.Gmail img{
+    width: 30px;
+    height:30px;
+}
+
+.Gmail h2{
+transform:translateY(-20px) translateX(30px)
+}
+
+.linkedin img{
+    width: 30px;
+    height:30px;
+}  
