@@ -72,6 +72,7 @@
     text-align: center;
     padding: 5% 5%;
     background-color: rgba(43, 170, 159, 0);
+    padding-top: 2%;
 }
 
 .footerContainer .links a:hover{
